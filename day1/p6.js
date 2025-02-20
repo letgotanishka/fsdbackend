@@ -1,8 +1,7 @@
 const fs = require('fs');
 
-const write=()=>{
+const write=(data)=>{
 
-    const data="I am new file"
     fs.writeFile("./data.txt",data,(err)=>{
         if(err)
             console.log("Error writing File",err);
